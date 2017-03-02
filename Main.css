@@ -1,0 +1,592 @@
+﻿html {
+    background-color: rgb(247,227,166);
+}
+
+body {
+    background-image: url("scroll/scroll6.jpg");
+    background-attachment: fixed;
+    height: 2800px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #e1bb34;
+}
+
+.globalContainer {
+    width: 1000px;
+    height: 2500px;
+    background-size: 100%;
+    background-image: url(Imgs/spikes.png);
+    background-repeat: repeat-y;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.leftWrap {
+    position: relative;
+    height: 1900px;
+    width: 650px;
+    top: 150px;
+    border: 2px solid black;
+    float: left;
+    margin-left: 25px;
+}
+
+.tv {
+    height: 400px;
+    width: 600px;
+    background-color: black;
+}
+/*#region right side table*/
+.rightWrap {
+    position: relative;
+    top: 150px;
+    width: 200px;
+    height: 843px;
+    float: left;
+    margin-left: 58px;
+    /*
+                    background-image: url("scroll/scrolltop.png"), url(scroll/scrollmid.png);
+                    background-repeat: no-repeat, no-repeat;
+                    background-size: 235px 40px, 200px 800px;
+                    background-position: top; */
+}
+
+.rightNav {
+    width: 211px;
+    margin-left: 2px;
+    height: 780px;
+    overflow: scroll;
+    margin-top: 25px;
+    background-image: url(scroll/scrollmid.png);
+    background-size: 220px 760px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.rightNav table td {
+    padding: 10px;
+    margin: 2px;
+    border: 2px groove #e8cf7d;
+    text-align: center;
+    color: black;
+    font-family: myfont;
+    font-size: 1.2em;
+    background-image: url(scroll/scroll6.jpg);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rightNav table {
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.rightWrap div:nth-child(1) {
+    width: 250px;
+    position: absolute;
+    margin-top: 0;
+    background-image: url(scroll/scrolltop.png);
+    background-size: 250px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    left: -23px;
+    top: -5px;
+}
+
+.rightWrap div:nth-child(3) {
+    width: 250px;
+    position: absolute;
+    margin-bottom: 0;
+    background-image: url(scroll/scrollbot2.png);
+    background-size: 250px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    left: -25px;
+    bottom: 6px;
+}
+
+.tb {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rightNav td:hover {
+    text-decoration: solid;
+    transition: 1s linear;
+    /*color: #e1bb34;*/
+    background-image: url(scroll/bscroll.png);
+    background-size: 100% 200%;
+    background-position: center;
+    background-repeat: no-repeat repeat;
+    -moz-box-shadow: 0 0 40px 7px #fad474;
+    -webkit-box-shadow: 0 0 40px 7px #fad474;
+    box-shadow: 0 0 40px 7px #fad474;
+    opacity: 1;
+}
+
+.contact h5 {
+    padding: 4px;
+    line-height: 0px;
+    text-align: center;
+    margin-top: 5px;
+}
+/*#endregion*/
+/*#region header div*/
+.header {
+    position: absolute;
+    width: 1000px;
+}
+    /*.header li a {
+                display: block;
+                color: black;
+
+            } */
+.header li a {
+    margin: 40px 10px 0 10px;
+    height: 55px;
+    padding: 18px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    transition: transform 700ms;
+    background-image: url(scroll/scrolltb2.png);
+    background-repeat: no-repeat;
+    background-size: 172px 52px;
+    background-position: center;
+    box-sizing: border-box;
+    color: black;
+    font-size: .8em;
+}
+
+.header li {
+    list-style: none;
+    display: inline-block;
+}
+
+.arto {
+    float: left;
+    margin: 20px 0 0 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.header li:first-child {
+    margin-left: 40px;
+}
+
+.header li a:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*#endregion*/
+
+/*#region Form input*/
+.formm form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 2px groove #CCC;
+    border-radius: 1em;
+    height: 200px;
+    position: relative;
+    margin-top: 150px;
+    background-image: url(Imgs/wax.png), url(scroll/scroll4.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: 65px 65px, auto;
+    background-position: 340px 155px, center;
+}
+
+textarea {
+    font: 1em inherit;
+    width: 270px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    color: black;
+}
+
+textarea:focus {
+    border-color: #000;
+}
+/*#endregion*/
+.contact {
+    background-color: gray;
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    left: 925px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.ctc {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+:target {
+    z-index: 1;
+    visibility: visible;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(font/CloisterBlack.ttf);
+}
+
+a[href^="#test"]:before {
+    content: "\2709";
+}
+
+a:before {
+    color: white;
+    background-color: gray;
+    display: inline-block;
+    font-size: 120%;
+    padding: 2px 3px;
+    width: 1.2em;
+    text-align: center;
+    float: left;
+    position: absolute;
+    top: -2px;
+    right: 75px;
+    line-height: 17px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/*#region forums*/
+.leftWrap > div > h1 {
+    background-image: url(Imgs/fogc.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    opacity: 1;
+    display: block;
+    height: 120px;
+    margin-bottom: -13px;
+}
+
+.leftWrap .forum > h1 > span {
+    background-image: url(Imgs/wrk1.png), url(Imgs/forums.png);
+    background-repeat: no-repeat, no-repeat;
+    display: block;
+    background-position: bottom left, center 10px;
+    text-indent: -9999px;
+    background-size: 650px 40px, auto;
+    height: 120px;
+    -moz-box-shadow: 0 5px 20px -5px black;
+    -webkit-box-shadow: 0 5px 20px -5px black;
+    box-shadow: 0 5px 20px -5px black;
+}
+
+.forum {
+    background-image: url(scroll/scroll4.jpg);
+    height: 1068px;
+}
+
+.forum ul {
+    -moz-box-shadow: inset 0 0 10px black;
+    -webkit-box-shadow: inset 0 0 10px black;
+    box-shadow: inset 0 0 10px black;
+    height: 700px;
+    padding-top: 20px;
+    margin-top: 13px;
+}
+
+.forum ul li {
+    background-color: rgba(0,0,0,0.1);
+    display: block;
+    width: 480px;
+    height: 100px;
+    margin-top: 12px;
+    border-radius: 13px;
+    border: 2px inset rgba(0,0,0,0.3);
+    padding: 15px 15px;
+    margin-left: 155px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.forum ul li > p {
+    color: black;
+    font-family: sans-serif;
+}
+
+.forum li::before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0,0,0,0.1);
+    visibility: visible;
+    position: absolute;
+    left: -43px;
+    border-radius: 100px 110px;
+    margin-top: 10px;
+    border: 2px inset rgba(0,0,0,0.3);
+}
+
+.forum li:after {
+    content: url(Imgs/rsuser.png);
+    display: block;
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    background-size: 80px 80px;
+    background-position: center;
+    background: linear-gradient(gray, black);
+    border: 2px solid #46494b;
+    border-radius: 90px;
+    -moz-box-shadow: inset 0 0 10px black;
+    -webkit-box-shadow: inset 0 0 10px black;
+    box-shadow: inset 0 0 10px black;
+    left: -140px;
+    top: 10px;
+}
+
+.forum li:nth-child(2n):after {
+    content: url(Imgs/rsuser2.png);
+}
+
+.un {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    background-image: url(Imgs/usertx1.png);
+    background-size: 100% 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px;
+    position: absolute;
+    margin-top: 63px;
+    left: -155px;
+    z-index: 1;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+
+#usertxt {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 1.1em;
+    margin-left: 250px;
+    color: black;
+    font-family: sans-serif;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.h5un {
+    color: black;
+    text-align: center;
+}
+
+.leftWrap label {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    background-image: url(Imgs/usertx1.png);
+    background-size: 100% 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px;
+    position: absolute;
+    margin-top: 103px;
+    left: 4px;
+    z-index: 1;
+    font-size: 0.8em;
+}
+
+.leftWrap textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.leftWrap form textarea {
+    vertical-align: top;
+    resize: none;
+    width: 480px;
+    height: 100px;
+    border-radius: 13px;
+    margin-top: 22px;
+    margin-left: 155px;
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 1em 1em;
+}
+
+.leftWrap button {
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.leftWrap form {
+    width: 650px;
+    /*border: 2px groove black; */
+    border-radius: 1em;
+    height: 163px;
+    position: absolute;
+    bottom: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.forum .hr {
+    text-indent: -9999px;
+    display: inline-block;
+    background-image: url(Imgs/bar.jpg);
+    width: 650px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 650px 30px;
+    height: 30px;
+    position: relative;
+    top: 0px;
+}
+
+.anonPortrait {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    background-size: 80px 80px;
+    background-position: center;
+    background: linear-gradient(gray, black);
+    border: 2px solid #46494b;
+    border-radius: 90px;
+    -moz-box-shadow: inset 0 0 10px black;
+    -webkit-box-shadow: inset 0 0 10px black;
+    box-shadow: inset 0 0 10px black;
+    left: 20px;
+    bottom: 40px;
+}
+
+.anonPortrait:before {
+    content: url(Imgs/aus5.png);
+}
+
+.leftWrap h3 {
+    background-color:;
+    text-align: center;
+    color: black;
+    margin-top: 6px;
+}
+
+.leftWrap h3:after {
+    content: "Sign in";
+    display: block;
+    width: 90px;
+    height:;
+    background: linear-gradient(gray, black);
+    border: 2px solid black;
+    position: absolute;
+    right: 15px;
+    bottom: 155px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    color: white;
+}
+
+#pst {
+    cursor: pointer;
+}
+/*#endregion*/
+
+.add {
+    float: left;
+    width: 200px;
+    height: 930px;
+    background-color: black;
+    margin-top: 278px;
+    margin-left: 58px;
+    font-size: 3.6em;
+    word-wrap: break-word;
+    padding: 20px 90px;
+    box-sizing: border-box;
+    text-orientation: upright;
+    color: gray;
+}
+
+.foot {
+    position: absolute;
+    bottom: -222px;
+    left: 2px;
+    height: 500px;
+    width: 1000px;
+    background-color:;
+    margin-left: 25px;
+    background-image: url(Imgs/footer1.png);
+    background-size: 1000px 491px;
+    background-position: -2px 0;
+    background-repeat: no-repeat;
+}
+/*#region Javascript Functionallity*/
+.error {
+    border: 2px solid rgb(255, 128, 128);
+    background-color: rgb(255, 210, 210);
+}
+
+
+/*#endregion*/
+
+/*#region not sure if anyone should use this*/
+/*
+.tabs-target span:nth-of-type(1):not(:target) ~ span:nth-of-type(2):not(:target) ~ .tab:nth-of-type(1),
+.tabs-target span:nth-of-type(2):target ~ .tab:nth-of-type(2),
+.tabs-target span:nth-of-type(1):target ~ .tab:nth-of-type(3)
+     */
+
+
+/*
+section:not(:target) > a {border-bottom: 0; Background-color: gray}
+section:target > {background-color: white}
+section:not(:target) > div {z-index: -2}
+section:target > div {z-index-1}
+
+this says: section (or element) that is not a target and has a direct child thats an anchor give it blah blah
+section that is the target give it a background color of white
+section that is not the target give it a z index of -2
+sesction that is the target give it a z index of -1
+*/
+
+
+
+/*#endregion*/
+/*
+soft color #21242E
+what datalist this body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+pointer-events: none (makes you able to click through it)     */

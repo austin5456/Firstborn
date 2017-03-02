@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>testing layouts</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="Main.css">
+  <style>
+    div#loadScreen {
+      background: url(./scroll/loadScroll.png) no-repeat 55% -1% / 1200px 80px,  url(./scroll/scroll6.jpg);
+      opacity: 1;
+      position: fixed;
+      z-index: 1000;
+      width: 1200px;
+      top: 0px;
+      bottom: 0px;
+      left: 85px;
+    }
+    div#loadScreen.loaded {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.5s 0.2s ease-out;
+    transition: all 0.5s 0.2s ease-out;
+}
+  </style>
+  <script>
+    window.addEventListener("load", function () {
+      var loadScreen = document.getElementById("loadScreen");
+      loadScreen.className = "loaded";
+      setTimeout(function (){document.body.removeChild(loadScreen)}, 800);
+    });
+  </script>
+</head>
+<body>
+  <div id="loadScreen"></div>
+  <div class="globalContainer">
+    <div class="header">
+      <img class="arto" src="Imgs/arto.jpg" alt="uh oh somethign went wrong" height="100" width="100">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">LIST</a></li>
+        <li><a href="#">NEW SEASONS</a></li>
+        <li><a href="#">POPULAR</a></li>
+      </ul>
+    </div>
+    <div class="leftWrap">
+      <table class="tb" cellspacing="10">
+        <tbody>
+          <tr>
+            <td>
+              <div class="tv">
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="tv"></div></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <div class="forum">
+        <h1 class="title"><span>"forum"</span></h1>
+        <div class="anonPortrait"></div>
+        <ul id="users">
+          <li><p><span class="un">Pwnage315</span>You know that to make an actual working forum section you need to set up a server right? </p></li>
+          <li><p><span class="un">Crafter123</span>Yeah i know, not only that but you have to set up an API work with PHP and a couple others...so until then this will do</p></li>
+          <li><p><span class="un">Pwnage315</span>Lol then how the heck did you make this section??????</p></li>
+          <li><p><span class="un">Crafter123</span>Shhhh it's a secret ;)</p></li>
+        </ul>
+        <h4 class="hr">hr</h4>
+        <h3 id="sts" class="mouse">Leave a comment</h3>
+        <form action="#" method="post">
+          <div>
+            <label for="msg">Anonymous</label>
+            <button type="button" id="pst">Post your message</button>
+            <textarea id="txt" name="user_message"></textarea>
+            <h5 class="h5un">What shall we call you?</h5>
+            <input type="text" id="usertxt" class="uninput" maxlength="15" placeholder="Username">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="rightWrap">
+      <div></div>
+      <div class="rightNav">
+        <table cellspacing="7">
+          <tbody>
+            <tr>
+              <td>button 1</td>
+            </tr>
+            <tr>
+              <td>button 2</td>
+            </tr>
+            <tr>
+              <td>button 3</td>
+            </tr>
+            <tr>
+              <td>button 4</td>
+            </tr>
+            <tr>
+              <td>button 5</td>
+            </tr>
+            <tr>
+              <td>button 6</td>
+            </tr>
+            <tr>
+              <td>button 7</td>
+            </tr>
+            <tr>
+              <td>button 8</td>
+            </tr>
+            <tr>
+              <td>button 9</td>
+            </tr>
+            <tr>
+              <td>button 10</td>
+            </tr>
+            <tr>
+              <td>button 11</td>
+            </tr>
+            <tr>
+              <td>button 12</td>
+            </tr>
+            <tr>
+              <td>button 13</td>
+            </tr>
+            <tr>
+              <td>button 14</td>
+            </tr>
+            <tr>
+              <td>button 15</td>
+            </tr>
+            <tr>
+              <td>button 16</td>
+            </tr>
+            <tr>
+              <td>button 17</td>
+            </tr>
+            <tr>
+              <td>button 18</td>
+            </tr>
+            <tr>
+              <td>button 19</td>
+            </tr>
+            <tr>
+              <td>button 20</td>
+            </tr>
+            <tr>
+              <td>button 21</td>
+            </tr>
+            <tr>
+              <td>button 22</td>
+            </tr>
+            <tr>
+              <td>button 23</td>
+            </tr>
+            <tr>
+              <td>button 24</td>
+            </tr>
+            <tr>
+              <td>button 25</td>
+            </tr>
+            <tr>
+              <td>button 26</td>
+            </tr>
+            <tr>
+              <td>button 27</td>
+            </tr>
+            <tr>
+              <td>button 28</td>
+            </tr>
+            <tr>
+              <td>button 29</td>
+            </tr>
+            <tr>
+              <td>button 30</td>
+            </tr>
+            <tr>
+              <td>last button</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div></div>
+    </div>
+    <div class="add">ADVERTISEMENT</div>
+    <div class="contact">
+      <a href="#test"><h5 class="ctc">Contact us</h5></a>
+    </div>
+    <div class="foot" id="here"></div>
+  </div>
+
+  <script src="Javascript/postMech.js">
+  </script>
+
+</body>
+</html>
