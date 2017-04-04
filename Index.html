@@ -4,32 +4,6 @@
   <title>testing layouts</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="Main.css">
-  <style>
-    div#loadScreen {
-      background: url(./scroll/loadScroll.png) no-repeat 55% -1% / 1200px 80px,  url(./scroll/scroll6.jpg);
-      opacity: 1;
-      position: fixed;
-      z-index: 1000;
-      width: 1200px;
-      top: 0px;
-      bottom: 0px;
-      left: 85px;
-    }
-    div#loadScreen.loaded {
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    -webkit-transition: all 0.5s 0.2s ease-out;
-    transition: all 0.5s 0.2s ease-out;
-}
-  </style>
-  <script>
-    window.addEventListener("load", function () {
-      var loadScreen = document.getElementById("loadScreen");
-      loadScreen.className = "loaded";
-      setTimeout(function (){document.body.removeChild(loadScreen)}, 800);
-    });
-  </script>
 </head>
 <body>
   <div id="loadScreen"></div>
